@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69.5.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatsapp-cloud-api-client"
+version = "0.1.0"
+description = "Biblioteca Python para integração com a API Oficial do WhatsApp (Cloud API)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Seu Nome" }
+]
+keywords = ["whatsapp", "whatsapp cloud api", "meta", "messaging", "python"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "httpx>=0.27.0,<1.0.0",
+  "pydantic>=2.7.0,<3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/seu-usuario/whatsapp-cloud-api-client"
+Documentation = "https://github.com/seu-usuario/whatsapp-cloud-api-client#readme"
+Issues = "https://github.com/seu-usuario/whatsapp-cloud-api-client/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0,<9.0.0",
+  "pytest-asyncio>=0.23.7,<1.0.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
