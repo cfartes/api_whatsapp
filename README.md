@@ -154,3 +154,7 @@ Opcional: se preferir token, adapte o workflow para usar `PYPI_API_TOKEN`.
 ## Licenca
 
 MIT
+
+## Documentacao completa
+
+- Guia de uso: `docs/GUIA_DE_USO.md`
