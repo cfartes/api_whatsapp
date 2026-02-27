@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "whatsapp-cloud-api-client"
-version = "0.2.0"
+version = "0.2.1"
 description = "Biblioteca Python para integração com a API Oficial do WhatsApp (Cloud API)."
 readme = "README.md"
 license = { text = "MIT" }
